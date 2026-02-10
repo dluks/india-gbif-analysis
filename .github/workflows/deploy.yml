@@ -27,13 +27,15 @@ jobs:
       - name: Install Jupyter Book
         run: pip install jupyter-book
 
-      - name: Build the book
-        run: jupyter-book build --all
+      - name: Build static HTML
+        env:
+          BASE_URL: /india-gbif-analysis
+        run: jupyter-book build --html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _build/site
+          path: _build/html
 
   deploy:
     needs: build
