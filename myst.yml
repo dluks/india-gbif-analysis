@@ -2,7 +2,7 @@ version: 1
 project:
   title: "India's Contribution to GBIF Citizen Science"
   authors:
-    - name: A quick and dirty analysis by Daniel Lusk
+    - name: A quick and dirty analysis
   toc:
     - file: intro.md
     - file: 01_data_loading.ipynb
