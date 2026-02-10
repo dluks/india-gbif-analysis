@@ -1,0 +1,22 @@
+version: 1
+project:
+  title: "India's Contribution to GBIF Citizen Science"
+  authors:
+    - name: A quick and dirty analysis by Daniel Lusk
+  toc:
+    - file: intro.md
+    - file: 01_data_loading.ipynb
+    - file: 02_relative_contribution.ipynb
+    - file: 03_geographic_distribution.ipynb
+    - file: 04_biases.ipynb
+    - file: 05_growth_trajectory.ipynb
+    - file: 06_splot_gap.ipynb
+    - file: 07_trait_mapping.ipynb
+    - file: 08_summary.ipynb
+site:
+  template: book-theme
+  options:
+    logo_text: "India GBIF Analysis"
+    hide_search: true
+  parts:
+    primary_sidebar_footer: ""
